@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState} from 'react'
 import AddRemoveUser from "../assets/portfolio/AddRemoveUser.png"
 import AutoPriceMLChart from "../assets/portfolio/AutoPriceMLChart.png"
 import beachEvents1 from "../assets/portfolio/beachEvents1.JPG"
@@ -9,60 +9,90 @@ import FridgeManagerApp from "../assets/portfolio/FridgeManagerApp.png"
 import MITM from "../assets/portfolio/MITM.JPG"
 import pokemonChart from "../assets/portfolio/pokemonChart.png"
 import PokemonMain from "../assets/portfolio/PokemonMain.jpeg"
+import {BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs'
+
 
 function Portfolio() {
     const portfolios = [
         {
             id: 1, 
-            src: beachEvents1
+            src: beachEvents1, 
+            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate minima culpa ratione totam recusandae aliquid ",
+            heading: "Beach Events",
+            style: "shadow-[#8f15b1]"
+
         },
         {
             id: 2, 
-            src:  FridgeManagerApp 
+            src:  FridgeManagerApp,
+            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate minima culpa ratione totam recusandae aliquid ",
+            heading: "Fridge Manager",
+            style: "shadow-[#4d43c7]" 
         },
         {
             id: 3, 
-            src: EvilTwinAttack
+            src: EvilTwinAttack,
+            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate minima culpa ratione totam recusandae aliquid ",
+            heading: "Evil Twin Attack Script",
+            style: "shadow-[#00c8ff]"
         },
         {
             id: 4, 
-            src: PokemonMain
+            src: PokemonMain,
+            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate minima culpa ratione totam recusandae aliquid ",
+            heading: " Pokemon CLI Game",
+            style: "shadow-[#fdf5a2]"
+
         },
         {
             id: 5, 
-            src: AutoPriceMLChart
+            src: AutoPriceMLChart,
+            description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate minima culpa ratione totam recusandae aliquid ",
+            heading: " Auto price Predictor",
+            style: "shadow-[#fe8088]"
         }
 
     ]
+    const [index, setIndex] = useState(0)
+    const leftProj = () =>{
+        const isFirst = index === 0
+        const newIndex = isFirst ? portfolios.length -1 : index - 1
+        setIndex(newIndex)
+    }
+    const rightProj = () =>{
+        const isLast = index === portfolios.length - 1 
+        const newIndex = isLast ? 0 : index + 1
+        setIndex(newIndex)
+    }
   return (
-    <div name='Portfolio' className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-fit'>
-        <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-            <div className=' pt-28'>
-                <p className='md:text-4xl text-2xl font-bold inline border-b-4 border-gray-500'>Portfolio</p>
-                <p className='py-6'>Check out some of my work right here</p>
-            </div>
-            
-            <div  className=' grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-14 sm-px-0 h-full'>
+    <div name='Projects' className=' bg-gradient-to-b from-black to-gray-900 text-white h-fit'>
+            <div className='grid sm:grid-cols-2 justify-center items-center pt-28 sm:mx-36 mx-20 h-fit'>
                 {
-                    portfolios.map(({id, src}) => (
-                        <div key={id} className=' max-h-48 shadow-md shadow-gray-600 rounded-lg '>
-                            <img src={src} alt="" className='rounded-md duration-200 hover:scale-105 h-4/6 w-full '/>
-                            <div className=' flex items-center justify-center'>
-                                <button  className=' w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110' >Demo</button>
-                                <button className=' w-1/2 px-6  py-3  m-4 duration-200 hover:scale-110' >Code</button>
+                    portfolios.map(({id, src, description, heading, style}) => (
+                        <div className={'shadow-lg  rounded-xl mb-10 md:mb-10 sm:mx-3 p-2' + ' ' + style}>
+                            <p className=' font-semibold text-center'><h1>{heading}</h1></p>
+                            <div key={id} className='sm:flex sm:flex-row sm:gap-4 md:h-[220px] py-2'>
+                                <div className=' sm:ml-2 grid grid-cols-1 sm:w-6/12'>
+                                    <img src={src} alt="" className=' duration-200 h-[200px] sm:h-[140px] hover:scale-105 w-full rounded-xl'/>
+                                    <div className=' flex flex-row  gap-2'>
+                                            <button  className=' w-1/2  py-2  duration-200 hover:scale-110' >Demo</button>
+                                            <button className=' w-1/2   py-2  duration-200 hover:scale-110' >Code</button>
+                                    </div>
+                                </div>
+                                <div className='sm:w-7/12 sm:px-2'>
+                                    <p>{description}</p>
+                                    
+                                </div>
                             </div>
-                            
-                            
                         </div>
-                        
-                        
                     ))
                 }
-                        
             </div>
-        </div>
+
+       
     </div>
   )
-}
+  
+};
 
 export default Portfolio

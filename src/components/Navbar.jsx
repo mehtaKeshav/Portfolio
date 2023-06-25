@@ -14,11 +14,11 @@ function Navbar() {
       },
       {
         id: 3,
-        link: 'Portfolio'
+        link: 'Projects'
       },
       {
         id: 4,
-        link: 'Experience'
+        link: 'Skills'
       },
       {
         id: 5,
