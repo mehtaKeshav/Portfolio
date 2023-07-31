@@ -57,10 +57,10 @@ function Portfolio() {
   return (
     <div name='Projects' className=' pt-24 bg-gradient-to-b from-black to-gray-900 text-white flex flex-col justify-center h-fit '>
         <p className='sm:mx-32 md:text-3xl text-xl font-semibold border-b-2 p-2  border-gray-500'>Projects</p>
-            <div className='grid sm:grid-cols-2 2xl:grid-cols-3 justify-center items-center pt-10 md:mx-40 mx-20 h-fit'>
+            <div className='grid sm:grid-cols-2 2xl:grid-cols-3 justify-center items-center pt-5 sm:pt-10 md:mx-40 mx-10 h-fit'>
                 {   
                     portfolios.map(({id, src, description, heading, style}) => (
-                        <div className={'shadow-lg hover:scale-105 rounded-xl mb-10 m d:mb-10 sm:mx-3 p-2 '+ style}>
+                        <div className={'shadow-lg hover:scale-105 rounded-xl mb-10  d:mb-10 sm:mx-3 p-2 '+ style}>
                             <p className=' font-semibold text-center'><h1>{heading}</h1></p>
                             <div key={id} className='sm:flex sm:flex-row sm:gap-4 md:h-[220px] py-2'>
                                 <div className=' sm:ml-2 grid grid-cols-1 sm:w-6/12'>
