@@ -43,11 +43,11 @@ const Skills = () => {
   return (
     <div name='Skills' className='w-full h-screen bg-gradient-to-b from-gray-900 to-black flex flex-col  justify-center'>
       <div className=''>
-          <p className='pt-24 sm:mx-32 p-2 md:text-3xl text-xl font-semibold  border-b-2 border-gray-500 text-white'>Skills</p>
+          <p className='sm:pt-24 pt-5 sm:mx-32 p-2 md:text-3xl text-xl font-semibold  border-b-2 border-gray-500 text-white'>Skills</p>
         <div className=' p-0 sm:mx-32 md:flex flex-col md:justify-center'>
           <div className=' p-0 md:grid md:grid-cols-2'>
-            <p className=' m-5 text-white'> Programming Languages :</p>
-            <div className='m-5 flex flex-row'>
+            <p className=' m-5  text-white'> Programming Languages :</p>
+            <div className='m-5 py-2 sm:py-0 flex flex-row sm:overflow-auto overflow-scroll'>
               <img title='Python'src={py} className='h-12 w-12 ml-3' alt="" />
               <img title='C++'src={cpp} className='h-12 w-12 ml-3' alt="" />
               <img title='Java'src={java} className='h-12 w-12 ml-3' alt="" />
@@ -60,8 +60,8 @@ const Skills = () => {
 
 
           <div className='md:grid md:grid-cols-2'>
-            <p className='m-5 text-white'> Frameworks :</p>
-            <div className=' m-5 flex flex-row'>
+            <p className='m-5  text-white'> Frameworks :</p>
+            <div className=' m-5  py-2 sm:py-0 flex flex-row overflow-scroll'>
               <img title='Django'src={dj} className='h-12 w-12 ml-3' alt="" />
               <img title='ReactJS'src={rt} className='h-12 w-12 ml-3' alt="" />
               <img title='Node.js'src={node} className='h-12 w-12 ml-3' alt="" />
@@ -70,8 +70,8 @@ const Skills = () => {
 
 
           <div className='md:grid md:grid-cols-2'>
-            <p className=' m-5 text-white'> Database & tools :</p>
-            <div className='m-5 flex flex-row'>
+            <p className=' m-5  text-white'> Database & tools :</p>
+            <div className='m-5 py-2 sm:py-0 flex flex-row overflow-scroll'>
               <img title='MongoDB'src={mongo} className='h-12 w-12 ml-3' alt="" />
               <img title='MySQL'src={mysql} className='h-12 w-12 ml-3' alt="" />
               <img title='Postgresql'src={postgresql} className='h-12 w-12 ml-3' alt="" />
@@ -83,7 +83,7 @@ const Skills = () => {
 
           <div className='md:grid md:grid-cols-2'>
             <p className=' m-5 text-white'> Development tools :</p>
-            <div className='m-5 flex flex-row'>
+            <div className='m-5 py-2 sm:py-0 flex flex-row overflow-hidden'>
               <img title='VS Code'src={vscode} className='h-12 w-12 ml-3' alt="" />
               <img title='AWS'src={aws} className='h-12 w-12 ml-3' alt="" />
               <img title='Atom'src={atom} className='h-12 w-12 ml-3' alt="" />
