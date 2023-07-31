@@ -28,7 +28,7 @@ function Navbar() {
     ]
     return (
       // Navbar
-      <div className="flex  justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-10">
+      <div className="flex  justify-between items-center w-full h-16 px-4 text-white bg-black fixed z-10">
         {/* Logo */}
         <div> 
           <h1 className=" text-4xl 2xl:text-5xl font-signature ml-2">
