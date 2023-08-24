@@ -40,7 +40,7 @@ const SocialLinks = () => {
                 Resume <BsFillPersonLinesFill size={32} className='pl-1 fill-slate-'/>
                 </>
             ),
-            href: '/resume.pdf',
+            href: '/Keshav Bhaskarbhai Mehta.pdf',
             style: 'rounded-br-md',
             download: true,
         }
