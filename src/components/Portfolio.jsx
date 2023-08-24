@@ -59,7 +59,7 @@ function Portfolio() {
         {
             id: 5, 
             src: AutoPriceMLChart,
-            description: "Created an ML model to predict the Prices of automobiles with an accuracy of 87% by applying processing data techniques on data fetched from UCI's Machine Learning Repository ",
+            description: "Created an ML model to predict the Prices of automobiles with an accuracy of 87% by applying data processing techniques on data fetched from UCI's Machine Learning Repository ",
             heading: " Auto price Predictor",
             code: 'https://github.com/MayankTamakuwala/MachineLearning-Group-4',
             demo: '',
@@ -80,9 +80,8 @@ function Portfolio() {
                             <div key={id} className='sm:flex sm:flex-row sm:gap-4 md:h-[220px] py-2'>
                                 <div className=' sm:ml-2 grid grid-cols-1 sm:w-6/12'>
                                     <img src={src} alt="" className=' duration-200 h-[200px] sm:h-[140px] hover:scale-105 w-full rounded-xl'/>
-                                    <div className=' flex flex-row gap-2'>
-                                            <a href={demo} className={' w-1/2  py-2 text-center duration-200 hover:scale-110 '+ textStyle} >Demo</a>
-                                            <a href={code} className={' w-1/2   py-2  text-center duration-200 hover:scale-110 '+ textStyle }>Code</a>
+                                    <div className=' flex flex-row'>
+                                            <a href={code} className={' w-full  py-2  justify-center text-center duration-200 hover:scale-110 '+ textStyle }>Code</a>
                                     </div>
                                 </div>
                                 <div className='sm:w-7/12 sm:px-2'>
