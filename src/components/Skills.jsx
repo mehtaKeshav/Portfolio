@@ -43,7 +43,7 @@ const Skills = () => {
   return (
     <div name='Skills' className='w-full  h-screen bg-gradient-to-b from-gray-900 to-black flex flex-col  justify-center'>
       <div className=''>
-          <p className='sm:pt-24 pt-5 sm:mx-32 p-2 md:text-3xl text-xl mx-2 font-semibold  border-b-2 border-gray-500 text-white'>Skills</p>
+          <p className='sm:mx-32 p-2 md:text-3xl text-xl mx-2 font-semibold  border-b-2 border-gray-500 text-white'>Skills</p>
         <div className=' p-0 sm:mx-32 md:flex flex-col md:justify-center'>
           <div className=' p-0 md:grid md:grid-cols-2'>
             <p className=' m-5  text-white'> Programming Languages :</p>

@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 const SocialLinks = () => {
+    var a = window.innerWidth
+    var s = 32
+    if (a >= 1536){ 
+        s = 50
+
+    }
+    else{
+        s=32
+    }
     const links = [
         {
             id: 1,
             child:(
                 <>
-                LinkedIn <FaLinkedin size={32} className='pl-1 fill-slate-200'/>
+                LinkedIn <FaLinkedin size={s} className='pl-1 fill-slate-200'/>
                 </>
             ),
             href: 'https://www.linkedin.com/in/mehtakeshav',
@@ -19,7 +28,7 @@ const SocialLinks = () => {
             id: 2,
             child:(
                 <>
-                Github <FaGithub size={32} className='pl-1 fill-slate-200'/>
+                Github <FaGithub size={s} className='pl-1 fill-slate-200'/>
                 </>
             ),
             href: 'https://github.com/mehtaKeshav',
@@ -28,7 +37,7 @@ const SocialLinks = () => {
             id: 3,
             child:(
                 <>
-                Mail <HiOutlineMail size={32} className='pl-1 fill-slate-200'/>
+                Mail <HiOutlineMail size={s} className='pl-1 fill-slate-200'/>
                 </>
             ),
             href: 'mailto:m12.keshav@gmail.com',
@@ -37,7 +46,7 @@ const SocialLinks = () => {
             id: 4,
             child:(
                 <>
-                Resume <BsFillPersonLinesFill size={32} className='pl-1 fill-slate-'/>
+                Resume <BsFillPersonLinesFill size={s} className='pl-1 fill-slate-'/>
                 </>
             ),
             href: '/Keshav Bhaskarbhai Mehta.pdf',
