@@ -10,7 +10,7 @@ import FridgeManagerApp from "../assets/portfolio/FridgeManagerApp.png"
 // import pokemonChart from "../assets/portfolio/pokemonChart.png"
 import PokemonMain from "../assets/portfolio/PokemonMain.jpeg"
 // import {BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs'
-import SearchEngine from "../assets/portfolio/SearchEngine.jpeg"
+import SearchEngine from "../assets/portfolio/SearchEngine.jpg"
 
 function Portfolio() {
     const portfolios = [
