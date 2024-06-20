@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+// import React, { useEffect } from 'react'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
