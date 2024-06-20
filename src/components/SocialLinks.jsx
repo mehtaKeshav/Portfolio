@@ -7,7 +7,7 @@ const SocialLinks = () => {
     var a = window.innerWidth
     var s = 32
     if (a >= 1536){ 
-        s = 50
+        s = 48
 
     }
     else{
